@@ -21,8 +21,8 @@ MODE = "testing"
 # MODE = "production"
 
 NETWORK_CONFIG = 'localhost'
-# if getpass.getuser() == 'ubuntu':
-#     NETWORK_CONFIG = 'amazon'
+if getpass.getuser() == 'ubuntu':
+    NETWORK_CONFIG = 'amazon'
 
 
 # DEFAULT_LOG_LEVEL = logging.INFO
