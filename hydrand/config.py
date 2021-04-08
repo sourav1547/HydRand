@@ -281,7 +281,7 @@ if hydrand.cliconfig.USE_CLI_CONFIG:
     print_info()
 
 OUTPUT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'output'))
-if NETWORK_CONFIG != 'amazon':
+if NETWORK_CONFIG != 'localhost':
     OUTPUT_DIR = os.path.join(OUTPUT_DIR, str(NODE_ID))
 PID_FILE_PATH = os.path.join(OUTPUT_DIR, 'pid')
 RESULT_FILE_PATH = os.path.join(OUTPUT_DIR, 'result')

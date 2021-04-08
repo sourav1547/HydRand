@@ -139,7 +139,7 @@ class Node:
             signal.signal(signal.SIGHUP, self._shutdown)
 
         self.logger = logging.getLogger(f"NODE {node_id: <{len(str(N-1))}}")
-        if NETWORK_CONFIG == 'amazon':
+        if NETWORK_CONFIG == 'localhost':
             self.logger.addHandler(logging.FileHandler(LOG_FILE_PATH, mode='w'))
             self.logger.propagate = False
 
@@ -1069,7 +1069,7 @@ class Node:
             "%s message broadcasted (round=%d, size=%.2fKB)",
             signed_msg.message.type.name.lower(),
             signed_msg.message.round_idx,
-            len(signed_msg.serialized) / 1024
+            N*len(signed_msg.serialized) / 1024
         )
         self.sent_messages.append(signed_msg)
 
