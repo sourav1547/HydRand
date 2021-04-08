@@ -1,7 +1,7 @@
-ec2-3-12-84-7.us-east-2.compute.amazonaws.com
-ec2-3-17-191-162.us-east-2.compute.amazonaws.com
-ec2-3-143-170-59.us-east-2.compute.amazonaws.com
-ec2-18-188-45-217.us-east-2.compute.amazonaws.com
-ec2-18-216-180-90.us-east-2.compute.amazonaws.com
-ec2-18-224-137-195.us-east-2.compute.amazonaws.com
-ec2-52-14-130-251.us-east-2.compute.amazonaws.com
+ec2-3-12-84-7.us-east-2.compute.amazonaws.com:5000
+ec2-3-17-191-162.us-east-2.compute.amazonaws.com:5000
+ec2-3-143-170-59.us-east-2.compute.amazonaws.com:5000
+ec2-18-188-45-217.us-east-2.compute.amazonaws.com:5000
+ec2-18-216-180-90.us-east-2.compute.amazonaws.com:5000
+ec2-18-224-137-195.us-east-2.compute.amazonaws.com:5000
+ec2-52-14-130-251.us-east-2.compute.amazonaws.com:5000
