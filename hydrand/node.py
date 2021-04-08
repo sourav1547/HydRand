@@ -139,9 +139,9 @@ class Node:
             signal.signal(signal.SIGHUP, self._shutdown)
 
         self.logger = logging.getLogger(f"NODE {node_id: <{len(str(N-1))}}")
-        # if NETWORK_CONFIG == 'amazon':
-        self.logger.addHandler(logging.FileHandler(LOG_FILE_PATH, mode='w'))
-            # self.logger.propagate = False
+        if NETWORK_CONFIG == 'amazon':
+            self.logger.addHandler(logging.FileHandler(LOG_FILE_PATH, mode='w'))
+            self.logger.propagate = False
 
         self._t_round_start = PROTOCOL_START_TIME - ROUND_DURATION
         self.ID = node_id
