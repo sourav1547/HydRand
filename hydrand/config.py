@@ -21,7 +21,7 @@ MODE = "testing"
 # MODE = "production"
 
 NETWORK_CONFIG = 'localhost'
-if getpass.getuser() == 'ec2-user':
+if getpass.getuser() == 'ubuntu':
     NETWORK_CONFIG = 'amazon'
 
 
